@@ -1,0 +1,20 @@
+<div class="containersus">
+    <div class="stanga">
+        <h1>Dinkus</h1>
+        <p>Header-ul reprezinta continutul introducti sau ghidare în navigare. Poate si logo, semnatura si un search form.<br>
+          Aici, se contine un titlu, o descirere si buton-link catre ceva.</p>
+        <p><strong>C O N T I N U T :</strong><br>
+          Avem 6 carduri (le creem cu ngFor); fiecare card  are titlu, descriere si buton - link cu anchor catre google;
+          dispunerea de carduri unul langa altul folosim se face cu proprietatea <i><strong>display</strong></i> din css.</p>
+          <button type="button" (click)="showPic()">Spawn friend</button>
+    </div>
+    
+    <div class="dreapta">
+        <img src="https://www.ciwf.org.uk/media/7430330/sheep-closeup-eating-grass.jpg?anchor=center&mode=crop&width=730&height=400&&rnd=131364863080000000" alt="vaca alba">
+    </div>
+
+    <div class="dreaptaextra" *ngIf="displayPic">
+        <img src="https://media.istockphoto.com/id/1284109857/photo/closeup-of-black-icelandic-sheep-standing-on-green-grass-pasture-at-farm-field-in-south.jpg?s=612x612&w=0&k=20&c=EzGmbnhtXn3ZIffZn6IXdsHaM6aavwKd6upTysT-7v4=" alt="vaca alba">
+    </div>
+</div>
+

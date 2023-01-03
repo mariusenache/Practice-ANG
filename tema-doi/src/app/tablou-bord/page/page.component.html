@@ -1,0 +1,8 @@
+<button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Star Wars Info</span></button>
+    <nz-modal [(nzVisible)]="isVisible" nzTitle="About Star Wars" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+      <ng-container *nzModalContent>
+        <app-descriere *ngFor="let cardObj of Lista" [card]="cardObj"></app-descriere>
+      </ng-container>
+    </nz-modal>
+
+    
